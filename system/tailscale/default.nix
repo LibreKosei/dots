@@ -48,4 +48,5 @@
 
     allowedTCPPorts = [ 22 ];
   };
+  services.tailscale.useRoutingFeatures = "both";
 }

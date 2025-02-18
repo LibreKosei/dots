@@ -38,7 +38,7 @@
     glib
     gtk3
     gtk4
-    jdk
+    jdk17
     htop
     unzip
     zip
