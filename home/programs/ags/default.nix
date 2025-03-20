@@ -17,12 +17,12 @@
       inputs.ags.packages.${pkgs.system}.tray
       fzf
       gtksourceview
-      webkitgtk
       accountsservice
     ];
   };
 
   home.packages = with pkgs; [
     material-symbols
+    inputs.ags.packages.${pkgs.system}.notifd
   ];
 }

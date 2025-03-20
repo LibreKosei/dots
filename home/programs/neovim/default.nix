@@ -14,6 +14,7 @@ let
     nixd
     typescript-language-server
     vscode-langservers-extracted
+    pyright
   ];
 
   packages = with pkgs; [

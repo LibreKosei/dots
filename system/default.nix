@@ -9,5 +9,6 @@
     ./hyprland
     ./udev
     ./tailscale
+    ./mariadb
   ];
 }

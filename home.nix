@@ -38,10 +38,11 @@
     glib
     gtk3
     gtk4
-    jdk17
+    jdk
     htop
     unzip
     zip
+    mysql-workbench
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

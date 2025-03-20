@@ -10,6 +10,8 @@
     };
  
     ags.url = "github:aylur/ags";
+
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: 
