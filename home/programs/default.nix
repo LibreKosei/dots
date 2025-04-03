@@ -7,5 +7,6 @@
     ./ags
     ./neovim
     ./obs
+    ./direnv
   ];
 }

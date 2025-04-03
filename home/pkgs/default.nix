@@ -4,6 +4,7 @@
     ./browsers
     ./games
     ./obsidian
+    ./unfree
   ];
 
   home.packages = with pkgs; [

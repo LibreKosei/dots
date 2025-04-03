@@ -15,6 +15,7 @@ let
     typescript-language-server
     vscode-langservers-extracted
     pyright
+    elixir-ls
   ];
 
   packages = with pkgs; [

@@ -43,6 +43,7 @@
     unzip
     zip
     mysql-workbench
+    efibootmgr
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
