@@ -44,6 +44,9 @@
     zip
     mysql-workbench
     efibootmgr
+    libreoffice
+    maven
+    jetbrains.idea-community
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
