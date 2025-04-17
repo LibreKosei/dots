@@ -16,6 +16,7 @@ let
     vscode-langservers-extracted
     pyright
     elixir-ls
+    jdt-language-server
   ];
 
   packages = with pkgs; [

@@ -44,7 +44,10 @@ return {
         dependencies = {
           "nvim-lua/plenary.nvim",
         },
-  }
+  },
+    {
+        "mfussenegger/nvim-jdtls"
+    }
 
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
