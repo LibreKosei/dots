@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls", "nixd", "pyright", "elixirls" }
+local servers = { "html", "cssls", "nixd", "pyright", "elixirls", "jdtls" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -32,3 +32,8 @@ lspconfig.denols.setup {
 lspconfig.elixirls.setup {
   cmd = { 'elixir-ls'}
 }
+
+-- lspconfig.java_language_server.setup {
+--     cmd = { "java-language-server" }
+-- }
+lspconfig.jdtls.setup{}

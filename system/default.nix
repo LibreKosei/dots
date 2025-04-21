@@ -10,5 +10,7 @@
     ./udev
     ./tailscale
     ./mariadb
+    ./nix-ld
+    ./java
   ];
 }

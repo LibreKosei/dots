@@ -8,5 +8,6 @@
     ./neovim
     ./obs
     ./direnv
+    ./java
   ];
 }
