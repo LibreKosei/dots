@@ -47,6 +47,8 @@
     libreoffice
     maven
     jetbrains.idea-community
+    clang-tools
+    clang
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
