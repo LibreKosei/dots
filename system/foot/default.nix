@@ -1,8 +1,8 @@
-{config, options, pkgs, ...}:
+{config, pkgs, ...}:
 {
     programs.foot = {
         enable = true;
-        theme = "material-design";
+        theme = "ayu-mirage";
         settings = {
             main = {
                 font = "monospace:size=13";

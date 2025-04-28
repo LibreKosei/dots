@@ -1,15 +1,15 @@
 {config, pkgs, ...}:
 {
-  imports = [
-    ./browsers
-    ./games
-    ./obsidian
-    ./unfree
-  ];
+    imports = [
+        ./browsers
+        ./games
+        ./obsidian
+        ./unfree
+        ./wallpaper
+    ];
 
-  home.packages = with pkgs; [
-      github-desktop
-      bitwarden
-      nautilus
-  ];
+    home.packages = with pkgs; [
+        bitwarden
+        nautilus   
+    ];
 }

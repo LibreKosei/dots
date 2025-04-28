@@ -1,13 +1,13 @@
 {config, ...}:
 {
-  imports = [
-    ./git
-    ./gtk
-    ./foot
-    ./ags
-    ./neovim
-    ./obs
-    ./direnv
-    ./java
-  ];
+    imports = [
+        ./git
+        ./gtk
+        ./ags
+        ./neovim
+        ./obs
+        ./direnv
+        ./java
+        ./eza
+    ];
 }

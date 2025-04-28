@@ -12,5 +12,6 @@
     ./mariadb
     ./nix-ld
     ./java
+    ./foot
   ];
 }
