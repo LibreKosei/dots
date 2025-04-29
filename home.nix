@@ -11,13 +11,9 @@
         dart-sass
         kitty
         wl-clipboard
-        yazi
         killall
         jq
         libnotify
-        glib
-        gtk3
-        gtk4
         htop
         unzip
         zip

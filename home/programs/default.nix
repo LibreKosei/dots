@@ -7,7 +7,7 @@
         ./neovim
         ./obs
         ./direnv
-        ./java
         ./eza
+        ./yazi
     ];
 }

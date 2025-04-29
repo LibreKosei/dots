@@ -1,7 +1,8 @@
 {config, ...}:
 {
-  imports = [
-    ./programs
-    ./pkgs
-  ];
+    imports = [
+        ./programs
+        ./pkgs
+        ./languages
+    ];
 }
