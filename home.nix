@@ -12,9 +12,7 @@
         kitty
         wl-clipboard
         killall
-        jq
         libnotify
-        htop
         unzip
         zip
         efibootmgr

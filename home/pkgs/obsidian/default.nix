@@ -1,10 +1,10 @@
 {config, pkgs, ...}:
 {
-  nixpkgs.config = {
-      allowUnfree = true;
-  };
+    nixpkgs.config = {
+        allowUnfree = true;
+    };
 
-  home.packages = [
-      pkgs.obsidian
-  ];
+    home.packages = [
+        pkgs.obsidian
+    ];
 }

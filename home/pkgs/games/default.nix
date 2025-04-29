@@ -1,7 +1,7 @@
 {pkgs, ...}:
 {
-  home.packages = with pkgs; [
-      prismlauncher
-      antimicrox
-  ];
+    home.packages = with pkgs; [
+        prismlauncher
+        antimicrox
+    ];
 }

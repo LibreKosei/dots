@@ -9,5 +9,7 @@
         ./direnv
         ./eza
         ./yazi
+        ./htop
+        ./jq
     ];
 }
