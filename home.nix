@@ -9,7 +9,6 @@
     home.packages = with pkgs; [
         brightnessctl
         dart-sass
-        kitty
         wl-clipboard
         killall
         libnotify

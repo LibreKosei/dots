@@ -12,5 +12,6 @@
         ./htop
         ./jq
         ./hypr
+        ./fzf
     ];
 }

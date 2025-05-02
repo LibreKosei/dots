@@ -4,5 +4,6 @@
         matugen
         gowall
         swww
+        waypaper
     ];
 }

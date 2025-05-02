@@ -8,6 +8,7 @@
         hyprland
         hypridle
         hyprlock
+        hyprshot
     ];
 
     xdg.configFile.hypr = {
