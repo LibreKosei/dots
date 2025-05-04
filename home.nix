@@ -15,6 +15,7 @@
         unzip
         zip
         efibootmgr
+        gtk4-layer-shell
     ];
 
     home.sessionVariables = {
