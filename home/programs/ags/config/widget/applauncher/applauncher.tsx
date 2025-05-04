@@ -53,7 +53,6 @@ export default function Applauncher() {
         keymode={Astal.Keymode.ON_DEMAND}
         layer={Astal.Layer.OVERLAY}
         application={App}
-        defaultHeight={600}
         animation="slide down"
         onShow={() => {
             apps.reload()
@@ -83,7 +82,9 @@ export default function Applauncher() {
                         }}
                     />
                 </box>
-                <Scrollable heightRequest={500} hscrollbar-policy={Gtk.PolicyType.NEVER}>
+                <Scrollable heightRequest={500} hscrollbar-policy={Gtk.PolicyType.NEVER}
+                    visible={list.as(list => list.length > 0)}
+                >
                 <box spacing={6} vertical>
                     {list.as(list => list.map(app => (
                         <AppButton app={app} />

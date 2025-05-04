@@ -54,14 +54,7 @@ export const BatteryBar = () => {
             })
         }} 
             icon={matchBatL(battery.percentage * 100, battery.charging)}
-        />
-        <label 
-            label={bind(battery, "percentage").as(p => `${Math.floor(p * 100)}%`)}
-            setup={self => {
-                hook(self, battery, "notify", () => {
-                    if (battery.percentage <= 0.5) self.cssClasses = ["half"]
-                })
-            }}
+            tooltipText={bind(battery, "percentage").as(p => `${Math.floor(p * 100)}%`)}
         />
         <levelbar
             setup={self => {

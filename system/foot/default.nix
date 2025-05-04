@@ -2,7 +2,7 @@
 {
     programs.foot = {
         enable = true;
-        theme = "ayu-mirage";
+        theme = "catppuccin-frappe";
         settings = {
             main = {
                 font = "monospace:size=13";

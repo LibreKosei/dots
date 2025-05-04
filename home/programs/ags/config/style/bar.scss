@@ -63,18 +63,11 @@ window.Bar {
     battery {
         margin-left: 1em;    
         border-radius: 1em;
-        color: $primary;
-        image {
-            color: $primary;
-        }
+        color: $on-surface;
 
         label {
-            color: $primary;
+            color: $on-surface;
             margin-right: 0.5rem;
-
-            &.half {
-                color: color.mix($error, lightgreen, 60%);
-            }
         }
     }
     levelbar {
