@@ -13,6 +13,5 @@
         ./jq
         ./hypr
         ./fzf
-        ./kitty
     ];
 }

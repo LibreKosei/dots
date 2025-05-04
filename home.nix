@@ -9,13 +9,13 @@
     home.packages = with pkgs; [
         brightnessctl
         dart-sass
+        kitty
         wl-clipboard
         killall
         libnotify
         unzip
         zip
         efibootmgr
-        gtk4-layer-shell
     ];
 
     home.sessionVariables = {
