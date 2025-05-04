@@ -13,5 +13,6 @@
         ./jq
         ./hypr
         ./fzf
+        ./zsh
     ];
 }
