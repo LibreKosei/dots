@@ -55,3 +55,19 @@ export function monitorWallpaper() {
         }
     )
 }
+
+export function monitorWall() {
+    const swwwPath = `${GLib.get_user_cache_dir()}/swww/eDP-1`
+
+    monitorFile(
+        swwwPath,
+        (file, evert) => {
+            timeout(350, () => {
+                execAsync(`cat ${swwwPath}`).then(path => {
+                    timeout(350, () => execAsync(`matugen img ${path}`))
+                })
+                .catch(err => print(err))
+            })
+        }
+    )
+}

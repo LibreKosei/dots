@@ -32,6 +32,5 @@
 
     home.packages = with pkgs; [
         material-symbols
-        inputs.ags.packages.${pkgs.system}.notifd
     ];
 }

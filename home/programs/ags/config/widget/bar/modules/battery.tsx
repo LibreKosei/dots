@@ -47,7 +47,7 @@ export const BatteryBar = () => {
     const battery = Battery.get_default()
 
     return <box valign={Gtk.Align.CENTER}>
-    <box heightRequest={20} cssName="battery">
+    <box height_request={20} cssName="battery">
         <MaterialSymbol setup={self => {
             hook(self, battery, "notify", () => {
                 self.label = matchBatL(battery.percentage * 100, battery.charging)

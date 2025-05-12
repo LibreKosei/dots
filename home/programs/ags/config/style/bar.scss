@@ -80,11 +80,11 @@ window.Bar {
             }
 
             & .filled.medium {
-                background-color: color.mix($primary, lightgreen, 60%);
+                background-color: $secondary;
             }
 
             & .filled.my-low, .filled.low {
-                background-color: $error;
+                background-color: $error-container;
             }
 
             & .empty {

@@ -12,6 +12,11 @@
         ags.url = "github:aylur/ags";
 
         zen-browser.url = "github:0xc000022070/zen-browser-flake";
+
+        icon-browser = {
+            url = "github:aylur/icon-browser";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
 
     outputs = { self, nixpkgs, home-manager, ... }@inputs: 
