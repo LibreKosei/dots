@@ -12,7 +12,7 @@
                 "zsh-interactive-cd"
             ];
         };
-        initExtra = ''
+        initContent = ''
            eval "$(direnv hook zsh)"
            eval "$(starship init zsh)"
         '';

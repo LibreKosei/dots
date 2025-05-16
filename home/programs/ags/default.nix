@@ -1,8 +1,4 @@
 {inputs, config, pkgs, ...}:
-    let
-        symlink = config.lib.file.mkOutOfStoreSymlink;
-        home = config.home.homeDirectory;
-    in 
 {
     imports = [inputs.ags.homeManagerModules.default];
 
@@ -23,11 +19,6 @@
             gtksourceview
             accountsservice
         ];
-    };
-
-    xdg.configFile.ags = {
-        recursive = true;
-        source = symlink "${home}/.dotfiles/home/programs/ags/config";
     };
 
     home.packages = with pkgs; [
