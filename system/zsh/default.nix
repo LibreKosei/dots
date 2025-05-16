@@ -7,8 +7,4 @@
             ls = "eza -1 --icons";
         };
     };
-
-    programs.starship = {
-        enable = true;
-    };
 }
