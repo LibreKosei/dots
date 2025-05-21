@@ -25,11 +25,6 @@
         ];
     };
 
-    xdg.configFile.ags = {
-        recursive = true;
-        source = symlink "${home}/.dotfiles/home/programs/ags/config";
-    };
-
     home.packages = with pkgs; [
         material-symbols
     ];

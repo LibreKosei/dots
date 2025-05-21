@@ -1,8 +1,4 @@
 {config, pkgs, ...}:
-    let
-        symlink = config.lib.file.mkOutOfStoreSymlink;
-        home = config.home.homeDirectory;
-    in
 {
     home.packages = with pkgs; [
         hyprland
@@ -10,9 +6,4 @@
         hyprlock
         hyprshot
     ];
-
-    xdg.configFile.hypr = {
-        recursive = true;
-        source = symlink "${home}/.dotfiles/home/programs/hypr/conf";
-    };
 }

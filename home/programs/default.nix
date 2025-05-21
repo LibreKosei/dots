@@ -14,6 +14,5 @@
         ./hypr
         ./fzf
         ./zsh
-        ./starship
     ];
 }
