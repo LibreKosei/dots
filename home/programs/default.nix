@@ -14,5 +14,6 @@
         ./hypr
         ./fzf
         ./zsh
+        ./virt-manager
     ];
 }

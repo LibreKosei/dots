@@ -13,5 +13,6 @@
         ./nix-ld
         ./foot
         ./virtualbox
+        ./virt-manager
     ];
 }
