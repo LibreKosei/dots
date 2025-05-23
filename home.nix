@@ -20,6 +20,7 @@
         zip
         efibootmgr
         fastfetch
+        woeusb
         inputs.icon-browser.packages.${pkgs.system}.default
     ];
 
