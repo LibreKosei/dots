@@ -10,5 +10,6 @@
         maven
         gradle
         jetbrains.idea-community
+        scenebuilder
     ];
 }
