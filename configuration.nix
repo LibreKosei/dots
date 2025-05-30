@@ -16,7 +16,7 @@
 
   # Set your time zone.
     time.timeZone = "Asia/Kuala_Lumpur";
-    services.automatic-timezoned.enable = true;
+    time.hardwareClockInLocalTime = true;
     networking.timeServers = options.networking.timeServers.default ++ ["ntp.example.com"];
 
     fonts = {
