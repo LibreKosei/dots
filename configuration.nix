@@ -15,7 +15,6 @@
     networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
   # Set your time zone.
-    time.timeZone = "Asia/Kuala_Lumpur";
     time.hardwareClockInLocalTime = true;
     networking.timeServers = options.networking.timeServers.default ++ ["ntp.example.com"];
 
