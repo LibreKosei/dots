@@ -5,17 +5,16 @@
         ./system
     ];
 
-  # Use the systemd-boot EFI boot loader.
+    # Use the systemd-boot EFI boot loader.
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
 
     networking.hostName = "nixos"; # Define your hostname.
-  # Pick only one of the below networking options.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+    # Pick only one of the below networking options.
+    # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
     networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
-  # Set your time zone.
-    time.hardwareClockInLocalTime = true;
+    # Set your time zone.
     networking.timeServers = options.networking.timeServers.default ++ ["ntp.example.com"];
 
     fonts = {
@@ -35,21 +34,21 @@
   
     programs.zsh.enable = true;
     users.defaultUserShell = pkgs.zsh;
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+    # Configure network proxy if necessary
+    # networking.proxy.default = "http://user:password@proxy:port/";
+    # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
-  # Select internationalisation properties.
-  # i18n.defaultLocale = "en_US.UTF-8";
-  # console = {
-  #   font = "Lat2-Terminus16";
-  #   keyMap = "us";
-  #   useXkbConfig = true; # use xkb.options in tty.
-  # };
-  # Enable touchpad support (enabled default in most desktopManager).
+    # Select internationalisation properties.
+    # i18n.defaultLocale = "en_US.UTF-8";
+    # console = {
+    #   font = "Lat2-Terminus16";
+    #   keyMap = "us";
+    #   useXkbConfig = true; # use xkb.options in tty.
+    # };
+    # Enable touchpad support (enabled default in most desktopManager).
     services.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+    # Define a user account. Don't forget to set a password with ‘passwd’.
     users.users.kosei = {
         isNormalUser = true;
         extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.

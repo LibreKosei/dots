@@ -1,8 +1,4 @@
 {inputs, config, pkgs, ...}:
-    let
-        symlink = config.lib.file.mkOutOfStoreSymlink;
-        home = config.home.homeDirectory;
-    in 
 {
     imports = [inputs.ags.homeManagerModules.default];
 
