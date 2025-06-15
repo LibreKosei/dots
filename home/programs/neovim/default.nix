@@ -24,6 +24,7 @@
 
         packages = with pkgs; [
             deno
+            qt6.full
         ];    
     in
 {

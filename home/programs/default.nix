@@ -15,5 +15,6 @@
         ./fzf
         ./zsh
         ./virt-manager
+        ./qt
     ];
 }
