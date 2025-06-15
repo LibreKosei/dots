@@ -22,6 +22,7 @@
         fastfetch
         woeusb
         inputs.icon-browser.packages.${pkgs.system}.default
+        inputs.quickshell.packages.${pkgs.system}.default
     ];
 
     home.sessionVariables = {

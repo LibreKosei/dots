@@ -33,6 +33,10 @@ lspconfig.elixirls.setup {
   cmd = { 'elixir-ls'}
 }
 
+lspconfig.qmlls.setup {
+    cmd = {"qmlls", "-E"}
+}
+
 -- lspconfig.java_language_server.setup {
 --     cmd = { "java-language-server" }
 -- }
