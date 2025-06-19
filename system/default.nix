@@ -14,5 +14,6 @@
         ./foot
         ./virtualbox
         ./virt-manager
+        ./wireguard
     ];
 }
