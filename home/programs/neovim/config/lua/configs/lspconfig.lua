@@ -37,6 +37,9 @@ lspconfig.qmlls.setup {
     cmd = {"qmlls", "-E"}
 }
 
+lspconfig.hls.setup {
+    filetypes = {"haskell", "lhaskell", "cabal"}
+}
 -- lspconfig.java_language_server.setup {
 --     cmd = { "java-language-server" }
 -- }
