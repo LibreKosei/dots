@@ -20,6 +20,7 @@
             jdt-language-server
             clang-tools
             lemminx
+            haskell-language-server
         ];
 
         packages = with pkgs; [
