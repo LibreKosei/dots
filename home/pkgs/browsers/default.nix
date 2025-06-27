@@ -3,8 +3,8 @@
     home.packages = with pkgs; [
         ungoogled-chromium
         firefox
-        floorp
+        # floorp
         brave
-        inputs.zen-browser.packages."${system}".default
+        # inputs.zen-browser.packages."${system}".default
     ];
 }
