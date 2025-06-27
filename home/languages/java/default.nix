@@ -9,7 +9,7 @@
         jdt-language-server
         maven
         gradle
-        jetbrains.idea-community
+        jetbrains.idea-community-bin
         scenebuilder
     ];
 }
