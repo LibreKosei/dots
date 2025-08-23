@@ -15,5 +15,6 @@
         ./virtualbox
         ./virt-manager
         ./wireguard
+        ./nh.nix
     ];
 }

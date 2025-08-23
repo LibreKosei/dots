@@ -16,5 +16,6 @@
         ./zsh
         ./virt-manager
         ./qt
+        ./hyprpanel.nix
     ];
 }

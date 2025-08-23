@@ -5,5 +5,9 @@
         hypridle
         hyprlock
         hyprshot
+        hyprland-qtutils
+        hyprland-qt-support
     ];
+
+    programs.waybar.enable = true;
 }
