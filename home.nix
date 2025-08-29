@@ -25,6 +25,7 @@
         inputs.quickshell.packages.${pkgs.system}.default
         devenv
         rofi-wayland
+        libreoffice-fresh
     ];
 
     home.sessionVariables = {
