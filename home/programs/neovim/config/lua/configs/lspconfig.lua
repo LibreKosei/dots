@@ -34,7 +34,7 @@ lspconfig.elixirls.setup {
 }
 
 lspconfig.qmlls.setup {
-    cmd = {"qmlls", "-E"}
+    -- cmd = {"qmlls", "-E"}
 }
 
 lspconfig.hls.setup {
