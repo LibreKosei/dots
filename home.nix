@@ -11,6 +11,7 @@
 
     home.packages = with pkgs; [
         brightnessctl
+        material-symbols
         dart-sass
         kitty
         wl-clipboard

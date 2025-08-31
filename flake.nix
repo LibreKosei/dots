@@ -19,7 +19,7 @@
         };
 
         quickshell = {
-            url = "github:cpwrs/quickshell";
+            url = "github:cpwrs/quickshell/nm";
             inputs.nixpkgs.follows = "nixpkgs";
         };
     };
