@@ -16,5 +16,6 @@
         ./virt-manager
         ./wireguard
         ./nh.nix
+        ./qt
     ];
 }
