@@ -16,5 +16,6 @@
         ./virt-manager
         ./qt
         ./hyprpanel.nix
+        ./vscode.nix
     ];
 }
