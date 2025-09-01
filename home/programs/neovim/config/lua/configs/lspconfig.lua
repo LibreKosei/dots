@@ -33,6 +33,10 @@ lspconfig.elixirls.setup {
   cmd = { 'elixir-ls'}
 }
 
+lspconfig.qmlls.setup {
+    cmd = {"qmlls", "-E"}
+}
+
 lspconfig.hls.setup {
     filetypes = {"haskell", "lhaskell", "cabal"}
 }
