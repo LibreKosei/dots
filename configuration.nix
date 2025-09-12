@@ -60,6 +60,9 @@
         wget
         python3
         qt6.full
+        qt6.qtmultimedia
+        qt6.qt5compat
+        qt6.qtquickeffectmaker
         kdePackages.qtdeclarative
         inputs.quickshell.packages.${pkgs.system}.default
     ];
