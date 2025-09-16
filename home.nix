@@ -27,6 +27,7 @@
         devenv
         rofi-wayland
         libreoffice-fresh
+        glib
     ];
 
     home.sessionVariables = {
