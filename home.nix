@@ -28,6 +28,8 @@
         rofi-wayland
         libreoffice-fresh
         glib
+        wireshark-qt
+        wireshark-cli
     ];
 
     home.sessionVariables = {
