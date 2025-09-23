@@ -17,5 +17,6 @@
         ./wireguard
         ./nh.nix
         ./qt
+        ./wireshark.nix
     ];
 }

@@ -17,6 +17,5 @@
         ./qt
         ./hyprpanel.nix
         ./vscode.nix
-        ./wireshark.nix
     ];
 }
