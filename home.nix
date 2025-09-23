@@ -28,7 +28,6 @@
         rofi-wayland
         libreoffice-fresh
         glib
-        wireshark
     ];
 
     home.sessionVariables = {
