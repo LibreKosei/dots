@@ -14,6 +14,8 @@
     # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
     networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
+    nixpkgs.config.allowUnfree = true;
+
     fonts = {
         packages = with pkgs; [
             fira-code
@@ -22,6 +24,8 @@
             noto-fonts-emoji
             noto-fonts-cjk-sans
             nerd-fonts.jetbrains-mono
+            corefonts
+            vista-fonts
         ];
         fontDir.enable = true;
         fontconfig = {
