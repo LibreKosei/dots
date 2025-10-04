@@ -25,7 +25,7 @@
         inputs.icon-browser.packages.${pkgs.system}.default
         inputs.quickshell.packages.${pkgs.system}.default
         devenv
-        rofi-wayland
+        rofi
         libreoffice-fresh
         glib
     ];

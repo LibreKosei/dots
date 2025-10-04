@@ -18,5 +18,6 @@
         ./nh.nix
         ./qt
         ./wireshark.nix
+        ./time.nix
     ];
 }
