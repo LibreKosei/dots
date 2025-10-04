@@ -19,5 +19,6 @@
         ./qt
         ./wireshark.nix
         ./time.nix
+        ./weylus.nix
     ];
 }
