@@ -28,6 +28,8 @@
         rofi
         libreoffice-fresh
         glib
+        xournalpp
+        libinput
     ];
 
     home.sessionVariables = {
