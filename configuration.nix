@@ -55,6 +55,7 @@
         extraGroups = [ "wheel" "libvirtd" "wireshark" ]; # Enable ‘sudo’ for the user.
         packages = with pkgs; [
             tree
+            wireshark
         ];
         shell = pkgs.zsh;
     };
@@ -70,10 +71,9 @@
         kdePackages.qtdeclarative
         inputs.quickshell.packages.${pkgs.system}.default
     ];
-
+    programs.wireshark.enable = true;
     system.stateVersion = "24.11"; # Did you read the comment?
     nix.settings.experimental-features = ["nix-command" "flakes"];
-    programs.wireshark.enable = true;
 }
 
 
