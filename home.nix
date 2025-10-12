@@ -30,6 +30,7 @@
         glib
         xournalpp
         libinput
+        blanket
     ];
 
     home.sessionVariables = {
@@ -37,5 +38,4 @@
     };
 
     programs.home-manager.enable = true;
-    programs.wireshark.enable = true;
 }

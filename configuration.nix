@@ -49,6 +49,8 @@
     # Enable touchpad support (enabled default in most desktopManager).
     services.libinput.enable = true;
 
+    services.resolved.enable = true;
+
     # Define a user account. Don't forget to set a password with ‘passwd’.
     users.users.kosei = {
         isNormalUser = true;
@@ -68,7 +70,11 @@
         qt6.qtmultimedia
         qt6.qt5compat
         qt6.qtquickeffectmaker
+        qt6.qtdeclarative
+        kdePackages.sonnet
         kdePackages.qtdeclarative
+        kdePackages.qqc2-desktop-style
+        pkgs.kdePackages.kirigami.passthru.unwrapped
         inputs.quickshell.packages.${pkgs.system}.default
     ];
     programs.wireshark.enable = true;
