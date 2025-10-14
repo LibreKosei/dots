@@ -18,6 +18,13 @@
         };
     };
     home = {
+        packages = with pkgs; [
+            vimix-icon-theme
+            qogir-icon-theme
+            dracula-icon-theme
+            candy-icons
+            whitesur-icon-theme
+        ];
         pointerCursor = {
             name = "Bibata-Modern-Amber";
             package = pkgs.bibata-cursors;
