@@ -31,10 +31,11 @@
         xournalpp
         libinput
         blanket
+        qt6ct
     ];
 
     home.sessionVariables = {
-    # EDITOR = "emacs";
+        EDITOR = "nvim";
     };
 
     programs.home-manager.enable = true;
