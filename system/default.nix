@@ -20,5 +20,6 @@
         ./wireshark.nix
         ./time.nix
         ./weylus.nix
+        ./niri.nix
     ];
 }
