@@ -40,6 +40,11 @@ lspconfig.qmlls.setup {
 lspconfig.hls.setup {
     filetypes = {"haskell", "lhaskell", "cabal"}
 }
+
+lspconfig.clangd.setup {
+    cmd = { "clangd", "--background-index", "--clang-tidy" },
+}
+
 -- lspconfig.java_language_server.setup {
 --     cmd = { "java-language-server" }
 -- }
