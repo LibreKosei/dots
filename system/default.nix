@@ -21,5 +21,6 @@
         ./time.nix
         ./weylus.nix
         ./niri.nix
+        ./tlp.nix
     ];
 }
