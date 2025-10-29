@@ -18,7 +18,6 @@
         ./nh.nix
         ./qt
         ./wireshark.nix
-        ./time.nix
         ./weylus.nix
         ./niri.nix
         ./tlp.nix
