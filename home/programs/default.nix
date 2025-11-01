@@ -1,21 +1,15 @@
 {config, ...}:
 {
     imports = [
-        ./git
-        ./gtk
+        ./git.nix
+        ./gtk.nix
         ./neovim
-        ./obs
-        ./direnv
-        ./eza
-        ./yazi
-        ./htop
-        ./jq
+        ./obs.nix
+        ./direnv.nix
+        ./eza.nix
+        ./yazi.nix
         ./hypr
-        ./fzf
-        ./zsh
-        ./virt-manager
-        ./qt
-        ./hyprpanel.nix
+        ./vm.nix
         ./vscode.nix
     ];
 }

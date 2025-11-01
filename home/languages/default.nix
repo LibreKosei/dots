@@ -3,6 +3,5 @@
     imports = [
         ./cpp 
         ./java 
-        ./javascript 
     ];
 }

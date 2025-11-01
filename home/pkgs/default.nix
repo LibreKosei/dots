@@ -2,14 +2,8 @@
 {
     imports = [
         ./browsers
-        ./games
-        ./obsidian
-        ./unfree
-        ./wallpaper
-    ];
-
-    home.packages = with pkgs; [
-        bitwarden
-        nautilus   
+        ./game.nix
+        ./unfree.nix
+        ./aesthetic.nix
     ];
 }

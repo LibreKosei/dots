@@ -4,7 +4,7 @@
         enable = true;
         settings = {
             manager = {
-                show_hidden = true;
+                show_hidden = false;
                 sort_dir_first = true;
             };
         };

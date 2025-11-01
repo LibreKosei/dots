@@ -31,12 +31,20 @@
         xournalpp
         libinput
         blanket
-        qt6ct
+        qt6Packages.qt6ct
+        bitwarden-desktop
+        nautilus   
+        zsh-powerlevel10k
+        fzf
+        htop
+        jq
     ];
 
     home.sessionVariables = {
         EDITOR = "nvim";
     };
+
+    qt.enable = true;
 
     programs.home-manager.enable = true;
 }
