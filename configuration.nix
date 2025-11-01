@@ -57,7 +57,6 @@
         extraGroups = [ "wheel" "libvirtd" "wireshark" ]; # Enable ‘sudo’ for the user.
         packages = with pkgs; [
             tree
-            wireshark
         ];
         shell = pkgs.zsh;
     };
@@ -65,21 +64,22 @@
     environment.systemPackages = with pkgs; [
         vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
         wget
-        python3
-        qt6.full
-        qt6.qtmultimedia
-        qt6.qt5compat
-        qt6.qtquickeffectmaker
-        qt6.qtdeclarative
-        kdePackages.sonnet
-        kdePackages.qtdeclarative
-        kdePackages.qqc2-desktop-style
-        pkgs.kdePackages.kirigami.passthru.unwrapped
+        wireguard-tools
         inputs.quickshell.packages.${pkgs.system}.default
     ];
-    programs.wireshark.enable = true;
+
     system.stateVersion = "24.11"; # Did you read the comment?
+
     nix.settings.experimental-features = ["nix-command" "flakes"];
+
+    services.udev.extraRules = ''
+        #Enable user access to keyboard using uinput event generator
+        SUBSYSTEM=="misc", KERNEL=="uinput", OPTIONS+="static_node=uinput", TAG+="uaccess"
+    '';
+
+    services.upower.enable = true;
+
+    security.polkit.enable = true;
 }
 
 

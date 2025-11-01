@@ -1,25 +1,19 @@
 {config, ...}:
 {
     imports = [
-        ./bluetooth
-        ./polkit
-        ./upower
-        ./zsh
-        ./im
-        ./hyprland
-        ./udev
-        ./tailscale
-        ./mariadb
-        ./nix-ld
-        ./foot
-        ./virtualbox
-        ./virt-manager
-        ./wireguard
+        ./bluetooth.nix
+        ./zsh.nix
+        ./keyboard.nix
+        ./hyprland.nix
+        ./tailscale.nix
+        ./nix-ld.nix
+        ./foot.nix
+        ./vm
         ./nh.nix
-        ./qt
+        ./qt.nix
         ./wireshark.nix
-        ./weylus.nix
         ./niri.nix
         ./tlp.nix
+        ./vcam.nix
     ];
 }
