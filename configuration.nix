@@ -21,7 +21,7 @@
             fira-code
             fira-code-symbols
             font-awesome
-            noto-fonts-emoji
+            noto-fonts-color-emoji
             noto-fonts-cjk-sans
             nerd-fonts.jetbrains-mono
             corefonts
