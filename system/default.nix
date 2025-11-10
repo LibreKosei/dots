@@ -15,6 +15,5 @@
         ./niri.nix
         ./tlp.nix
         ./vcam.nix
-        ./time.nix
     ];
 }
