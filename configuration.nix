@@ -80,6 +80,9 @@
     services.upower.enable = true;
 
     security.polkit.enable = true;
+
+    # time 
+    time.timeZone = "Asia/Kuala_Lumpur";
 }
 
 
