@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+    # KDE Connect
+    programs.kdeconnect.enable = true;
   # make the tailscale command usable to users
     environment.systemPackages = [ pkgs.tailscale ];
 
@@ -20,6 +22,13 @@
         allowedUDPPorts = [ config.services.tailscale.port ];
 
         allowedTCPPorts = [ 22 ];
+
+        allowedTCPPortRanges = [
+            { from = 1714; to = 1764; } # KDE Connect
+        ];
+        allowedUDPPortRanges = [
+            { from = 1714; to = 1764; } # KDE Connect
+        ];
     };
     services.tailscale.useRoutingFeatures = "both";
 }
