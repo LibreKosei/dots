@@ -26,6 +26,7 @@
             nerd-fonts.jetbrains-mono
             corefonts
             vista-fonts
+            ibm-plex
         ];
         fontDir.enable = true;
         fontconfig = {
