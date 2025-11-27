@@ -5,7 +5,7 @@
         ./zsh.nix
         ./keyboard.nix
         ./hyprland.nix
-        ./networking.nix.nix
+        ./networking.nix
         ./nix-ld.nix
         ./foot.nix
         ./vm

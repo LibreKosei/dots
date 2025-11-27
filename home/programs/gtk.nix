@@ -24,6 +24,7 @@
             dracula-icon-theme
             candy-icons
             whitesur-icon-theme
+            morewaita-icon-theme
         ];
         pointerCursor = {
             name = "Bibata-Modern-Amber";
