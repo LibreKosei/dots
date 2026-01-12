@@ -55,7 +55,7 @@
     # Define a user account. Don't forget to set a password with ‘passwd’.
     users.users.kosei = {
         isNormalUser = true;
-        extraGroups = [ "wheel" "libvirtd" "wireshark" ]; # Enable ‘sudo’ for the user.
+        extraGroups = [ "wheel" "libvirtd" "wireshark" "networkmanager" ]; # Enable ‘sudo’ for the user.
         packages = with pkgs; [
             tree
         ];
