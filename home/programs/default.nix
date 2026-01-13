@@ -11,5 +11,6 @@
         ./hypr
         ./vm.nix
         ./vscode.nix
+        ./ignis.nix
     ];
 }

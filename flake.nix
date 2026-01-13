@@ -22,13 +22,18 @@
             url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+
+        ignis = {
+            url = "github:ignis-sh/ignis";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
 
     outputs = { self, nixpkgs, home-manager, ... }@inputs: 
         let
             system = "x86_64-linux";
             lib = nixpkgs.lib;
-            pkgs = nixpkgs.legacyPackages.${system};
+            pkgs = nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system};
         in
     {
         nixosConfigurations = {
