@@ -84,6 +84,10 @@
 
     # time 
     time.timeZone = "Asia/Kuala_Lumpur";
+
+    hardware.opentabletdriver.enable = true;
+    hardware.uinput.enable = true;
+    boot.kernelModules = [ "uinput" ];
 }
 
 
