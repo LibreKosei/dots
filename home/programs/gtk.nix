@@ -25,6 +25,7 @@
             candy-icons
             whitesur-icon-theme
             morewaita-icon-theme
+            adwaita-icon-theme
             fluent-icon-theme
         ];
         pointerCursor = {

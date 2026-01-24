@@ -27,13 +27,15 @@
             url = "github:ignis-sh/ignis";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+
+        nix-minecraft.url = "github:Infinidoge/nix-minecraft";
     };
 
     outputs = { self, nixpkgs, home-manager, ... }@inputs: 
         let
             system = "x86_64-linux";
             lib = nixpkgs.lib;
-            pkgs = nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system};
+            pkgs = nixpkgs.legacyPackages.${system};
         in
     {
         nixosConfigurations = {
