@@ -15,6 +15,6 @@
         ./niri.nix
         ./tlp.nix
         ./vcam.nix
-        ./minecraft/
+        ./minecraft
     ];
 }
