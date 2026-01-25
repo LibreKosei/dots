@@ -1,6 +1,7 @@
 {config, ...}:
 {
     imports = [
+        ./fonts.nix
         ./bluetooth.nix
         ./zsh.nix
         ./keyboard.nix

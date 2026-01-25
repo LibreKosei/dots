@@ -16,23 +16,8 @@
 
     nixpkgs.config.allowUnfree = true;
 
-    fonts = {
-        packages = with pkgs; [
-            fira-code
-            fira-code-symbols
-            font-awesome
-            noto-fonts-color-emoji
-            noto-fonts-cjk-sans
-            nerd-fonts.jetbrains-mono
-            corefonts
-            vista-fonts
-            ibm-plex
-        ];
-        fontDir.enable = true;
-        fontconfig = {
-            defaultFonts.monospace = ["JetBrainsMono Nerd Font"];
-        };
-    };
+    global.fonts.enable = true;
+    global.bluetooth.enable = true;
   
     programs.zsh.enable = true;
     users.defaultUserShell = pkgs.zsh;
