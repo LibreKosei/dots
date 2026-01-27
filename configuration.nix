@@ -16,22 +16,56 @@
 
     nixpkgs.config.allowUnfree = true;
 
-    global.fonts.enable = true;
-    global.bluetooth.enable = true;
-  
-    programs.zsh.enable = true;
-    users.defaultUserShell = pkgs.zsh;
-    # Configure network proxy if necessary
-    # networking.proxy.default = "http://user:password@proxy:port/";
-    # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+    # global.fonts.enable = true;
+    # global.bluetooth.enable = true;
 
-    # Select internationalisation properties.
-    # i18n.defaultLocale = "en_US.UTF-8";
-    # console = {
-    #   font = "Lat2-Terminus16";
-    #   keyMap = "us";
-    #   useXkbConfig = true; # use xkb.options in tty.
-    # };
+    global = {
+        core = {
+            fonts.enable = true;
+            bluetooth.enable = true;
+            audio.enable = true;
+            power = {
+                enable = true;
+                acpid.enable = true;
+                tlp.enable = true;
+            };
+            locale.enable = true;
+            networking = {
+                enable = true;
+                tailscale.enable = true;
+            };
+            vm.enable = false;
+            zsh.enable = true;
+        };
+        
+        desktop = {
+            hyprland = {
+                enable = true;
+                hyprlock.enable = true;
+                hypridle.enable = true;
+            };
+            foot.enable = true;
+            qt.enable = true;
+        };
+
+        utils = {
+            nh.enable = true;
+            wireshark.enable = true;
+        };
+
+        games = {
+            minecraft.enable = true;
+        };
+        # fonts.enable = true;
+        # bluetooth.enable = true;
+        # games = {
+        #     minecraft.enable = true;
+        # };
+        # audio.enable = true;
+    };
+  
+    users.defaultUserShell = pkgs.zsh;
+
     # Enable touchpad support (enabled default in most desktopManager).
     services.libinput.enable = true;
 
@@ -51,7 +85,6 @@
         vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
         wget
         wireguard-tools
-        inputs.quickshell.packages.${pkgs.system}.default
     ];
 
     system.stateVersion = "24.11"; # Did you read the comment?

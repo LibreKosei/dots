@@ -54,6 +54,5 @@
             };
         };
 
-        fotmatter.${system} = pkgs.nixfmt-rfc-style;
     };
 }

@@ -1,9 +1,9 @@
 {config, pkgs, lib, ...}:
 let 
-    cfg = config.global.bluetooth;
+    cfg = config.global.core.bluetooth;
 in 
 {
-    options.global.bluetooth = {
+    options.global.core.bluetooth = {
         enable = lib.mkOption {
             type = lib.types.bool;
             default = true;

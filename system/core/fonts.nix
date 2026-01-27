@@ -1,6 +1,6 @@
 {lib, config, pkgs, ...}:
 let 
-    cfg = config.global.fonts;
+    cfg = config.global.core.fonts;
 in
 {
     options = {
@@ -8,7 +8,7 @@ in
         #     type = lib.types.bool;
         #     default = lib.mkDefault true;
         # };
-        global.fonts = {
+        global.core.fonts = {
             enable = lib.mkOption {
                 type = lib.types.bool;
                 default = true;
