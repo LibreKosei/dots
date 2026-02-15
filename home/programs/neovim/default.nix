@@ -2,7 +2,6 @@
     let
         symlink = config.lib.file.mkOutOfStoreSymlink;
         home = config.home.homeDirectory;
-        configDir = toString ./config;  
 
         TSdeps = with pkgs; [
             gcc
@@ -37,6 +36,6 @@
 
     xdg.configFile.nvim = {
         recursive = true;
-        source = symlink configDir;
+        source = symlink "${home}/.dotfiles/home/programs/neovim/config";
     };
 }

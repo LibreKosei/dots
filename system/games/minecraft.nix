@@ -66,7 +66,7 @@ in
 
                             FallingTree = pkgs.fetchurl {
                               url = "https://cdn.modrinth.com/data/Fb4jn8m6/versions/hDjB8uAg/FallingTree-1.21.10-1.21.10.1.jar";
-                              sha512 = lib.fakeSha512;
+                              sha512 = "sha512-YW02VdD+emtW8rfJc6xF9BOA9o0+XQxiBc8wgv8fNamJXI+K8tPqKnwkQBeErcT8l5tweUql98i8upqVELFDmA==";
                             };
                         }   
                     );
