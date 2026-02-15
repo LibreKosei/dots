@@ -15,6 +15,9 @@ in
         # ACPi 
         (lib.mkIf cfg.acpid.enable {
             services.acpid.enable = true;
+            
+            services.thermald.enable = true;
+            powerManagement.powertop.enable = true;
 
             services.logind = {
                 lidSwitch = "suspend";

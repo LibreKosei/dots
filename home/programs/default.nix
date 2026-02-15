@@ -9,8 +9,8 @@
         ./eza.nix
         ./yazi.nix
         ./hypr
-        ./vm.nix
+        # ./vm.nix
         ./vscode.nix
-        ./ignis.nix
+        # ./ignis.nix
     ];
 }

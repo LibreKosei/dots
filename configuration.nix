@@ -16,9 +16,6 @@
 
     nixpkgs.config.allowUnfree = true;
 
-    # global.fonts.enable = true;
-    # global.bluetooth.enable = true;
-
     global = {
         core = {
             fonts.enable = true;

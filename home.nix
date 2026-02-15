@@ -7,6 +7,13 @@
         ./home 
     ];
     home.stateVersion = "24.11"; # Please read the comment before changing.
+    
+    module = {
+        desktop = {
+            discord.enable = false;
+            quickshell.enable = true;
+        };
+    };
 
     home.packages = with pkgs; [
         brightnessctl
@@ -22,11 +29,9 @@
         fastfetch
         woeusb
         inputs.icon-browser.packages.${pkgs.system}.default
-        inputs.quickshell.packages.${pkgs.system}.default
         devenv
         rofi
         libreoffice-fresh
-        glib
         xournalpp
         libinput
         blanket
@@ -37,6 +42,7 @@
         fzf
         htop
         jq
+        kdePackages.okular
     ];
 
     home.sessionVariables = {

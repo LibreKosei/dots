@@ -63,6 +63,11 @@ in
                                 url = "https://cdn.modrinth.com/data/uCdwusMi/versions/CKJFSOC6/DistantHorizons-2.4.5-b-1.21.10-fabric-neoforge.jar";
                                 sha512 = "sha512-gut6fVsHGvkWQcqipvu7HNznWkGjYU24VBhnGxgWrxC1l86DFbBLnK1JS1varEFfXK60eEiUc3/Xg2MB9ae++A==";
                             };
+
+                            FallingTree = pkgs.fetchurl {
+                              url = "https://cdn.modrinth.com/data/Fb4jn8m6/versions/hDjB8uAg/FallingTree-1.21.10-1.21.10.1.jar";
+                              sha512 = lib.fakeSha512;
+                            };
                         }   
                     );
                 };

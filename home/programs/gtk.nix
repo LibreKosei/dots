@@ -25,7 +25,11 @@
             candy-icons
             whitesur-icon-theme
             morewaita-icon-theme
+            gnome-icon-theme
+            kdePackages.breeze-icons
+            hicolor-icon-theme
             adwaita-icon-theme
+            adwaita-icon-theme-legacy
             fluent-icon-theme
         ];
         pointerCursor = {

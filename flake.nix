@@ -28,7 +28,14 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
+        nixcraft = {
+            url = "github:loystonpais/nixcraft";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
+
         nix-minecraft.url = "github:Infinidoge/nix-minecraft";
+
+        nixcord.url = "github:FlameFlag/nixcord";
     };
 
     outputs = { self, nixpkgs, home-manager, ... }@inputs: 
