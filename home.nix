@@ -17,9 +17,7 @@
 
     home.packages = with pkgs; [
         brightnessctl
-        material-symbols
         dart-sass
-        kitty
         wl-clipboard
         killall
         libnotify
@@ -42,7 +40,7 @@
         fzf
         htop
         jq
-        kdePackages.okular
+        signal-desktop
     ];
 
     home.sessionVariables = {
