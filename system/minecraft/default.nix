@@ -22,7 +22,7 @@ in
 
             servers.fabricLatest = {
                 enable = true;
-                autoStart = false;
+                autoStart = true;
 
                 package = pkgs.fabricServers.fabric-1_21_10;
 
