@@ -41,6 +41,8 @@
         htop
         jq
         signal-desktop
+        usbutils
+        evtest
     ];
 
     home.sessionVariables = {
