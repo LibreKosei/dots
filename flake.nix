@@ -8,10 +8,6 @@
             url = "github:nix-community/home-manager/master";
             inputs.nixpkgs.follows = "nixpkgs";
         };
- 
-        ags.url = "github:aylur/ags";
-
-        zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
         icon-browser = {
             url = "github:aylur/icon-browser";
@@ -23,19 +19,12 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
-        ignis = {
-            url = "github:ignis-sh/ignis";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-
         nixcraft = {
             url = "github:loystonpais/nixcraft";
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
         nix-minecraft.url = "github:Infinidoge/nix-minecraft";
-
-        nixcord.url = "github:FlameFlag/nixcord";
     };
 
     outputs = { self, nixpkgs, home-manager, ... }@inputs: 
@@ -44,22 +33,25 @@
             lib = nixpkgs.lib;
             pkgs = nixpkgs.legacyPackages.${system};
         in
-    {
-        nixosConfigurations = {
-            nixos = lib.nixosSystem {
-                inherit system;
-                specialArgs = {inherit inputs;};
-                modules = [ ./configuration.nix ];
+        {
+            nixosConfigurations = {
+                nixos = lib.nixosSystem {
+                    inherit system;
+                    specialArgs = {inherit inputs;};
+                    modules = [ 
+                        ./configuration.nix
+                        ./modules/nixos
+                    ];
+                };
             };
-        };
 
-        homeConfigurations = {
-            kosei = home-manager.lib.homeManagerConfiguration {
-                inherit pkgs;
-                extraSpecialArgs = { inherit inputs; };
-                modules = [ ./home.nix ];
+            homeConfigurations = {
+                kosei = home-manager.lib.homeManagerConfiguration {
+                    inherit pkgs;
+                    extraSpecialArgs = { inherit inputs; };
+                    modules = [ ./home.nix ];
+                };
             };
-        };
 
-    };
+        };
 }

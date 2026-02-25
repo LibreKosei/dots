@@ -2,7 +2,6 @@
 {
     imports = [ # Include the results of the hardware scan.
         ./hardware-configuration.nix
-        ./system
     ];
 
     # Use the systemd-boot EFI boot loader.
@@ -17,7 +16,7 @@
 
     nixpkgs.config.allowUnfree = true;
 
-    global = {
+    modules = {
         core = {
             fonts.enable = true;
             bluetooth.enable = true;
