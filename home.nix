@@ -10,7 +10,6 @@
     
     module = {
         desktop = {
-            discord.enable = false;
             quickshell.enable = true;
         };
     };

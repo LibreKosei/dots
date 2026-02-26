@@ -16,9 +16,6 @@
             vscode-langservers-extracted
             pyright
             elixir-ls
-            java-language-server
-            jdt-language-server
-            clang-tools
             lemminx
         ];
 
