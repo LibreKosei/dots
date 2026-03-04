@@ -31,7 +31,7 @@
                 enable = true;
                 tailscale.enable = true;
             };
-            vm.enable = false;
+            vm.enable = true;
             zsh.enable = true;
         };
         
@@ -53,12 +53,6 @@
         games = {
             minecraft.enable = true;
         };
-        # fonts.enable = true;
-        # bluetooth.enable = true;
-        # games = {
-        #     minecraft.enable = true;
-        # };
-        # audio.enable = true;
     };
   
     users.defaultUserShell = pkgs.zsh;
@@ -79,10 +73,8 @@
     };
 
     environment.systemPackages = with pkgs; [
-        vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
         wget
         wireguard-tools
-        ticktick
     ];
 
     system.stateVersion = "24.11"; # Did you read the comment?
