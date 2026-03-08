@@ -42,6 +42,7 @@
         signal-desktop
         usbutils
         evtest
+        qbittorrent
     ];
 
     home.sessionVariables = {
