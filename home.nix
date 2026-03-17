@@ -33,7 +33,6 @@
         libinput
         blanket
         qt6Packages.qt6ct
-        bitwarden-desktop
         nautilus   
         zsh-powerlevel10k
         fzf
