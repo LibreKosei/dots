@@ -31,6 +31,7 @@
             adwaita-icon-theme
             adwaita-icon-theme-legacy
             fluent-icon-theme
+            kora-icon-theme
         ];
         pointerCursor = {
             name = "Bibata-Modern-Amber";

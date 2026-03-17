@@ -43,6 +43,8 @@
         usbutils
         evtest
         qbittorrent
+        protonvpn-gui
+        starship
     ];
 
     home.sessionVariables = {
