@@ -26,6 +26,11 @@ in
 
                 package = pkgs.fabricServers.fabric-1_21_10;
 
+                serverProperties = {
+                    difficulty = 3;
+                    motd = "NixOS Minecraft Server!";
+                };
+
                 symlinks = {
                     mods = pkgs.linkFarmFromDrvs "mods" (
                         builtins.attrValues {
