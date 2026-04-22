@@ -4,8 +4,10 @@
     home.homeDirectory = "/home/kosei";
 
     imports = [ 
-        ./home 
+        ./gtk.nix
+        ./neovim
     ];
+
     home.stateVersion = "24.11"; # Please read the comment before changing.
 
     nixpkgs.config = {
@@ -13,7 +15,6 @@
     };
 
     home.packages = with pkgs; [
-
         # Shell
         zsh-powerlevel10k
         starship

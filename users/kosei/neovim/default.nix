@@ -34,6 +34,6 @@
 
     xdg.configFile.nvim = {
         recursive = true;
-        source = symlink "${home}/.dotfiles/home/programs/neovim/config";
+        source = symlink "${home}/.dotfiles/users/kosei/neovim/config";
     };
 }
