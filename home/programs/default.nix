@@ -1,16 +1,16 @@
 {config, ...}:
 {
     imports = [
-        ./git.nix
+        # ./git.nix
         ./gtk.nix
         ./neovim
-        ./obs.nix
-        ./direnv.nix
-        ./eza.nix
-        ./yazi.nix
-        ./hypr
+        # ./obs.nix
+        # ./direnv.nix
+        # ./eza.nix
+        # ./yazi.nix
+        # ./hypr
         # ./vm.nix
-        ./vscode.nix
+        # ./vscode.nix
         # ./ignis.nix
     ];
 }

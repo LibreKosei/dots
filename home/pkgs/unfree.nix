@@ -4,7 +4,6 @@
         allowUnfree = true;
     };
     home.packages = [
-        pkgs.zoom-us
         pkgs.obsidian
     ];
 }

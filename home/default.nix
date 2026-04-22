@@ -2,7 +2,7 @@
 {
     imports = [
         ./programs
-        ./pkgs
-        ./desktop
+        # ./pkgs
+        # ./desktop
     ];
 }

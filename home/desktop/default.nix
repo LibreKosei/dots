@@ -1,6 +1,6 @@
 {
     imports = [
-        ./quickshell
-        ./thunderbird.nix
+        # ./quickshell
+        # ./thunderbird.nix
     ];
 }
