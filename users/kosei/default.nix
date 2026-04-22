@@ -39,6 +39,8 @@
         xournalpp
         qt6Packages.qt6ct
         inputs.icon-browser.packages.${pkgs.system}.default
+        ptyxis
+        rnote
 
         # Wallpaper utils 
         matugen
