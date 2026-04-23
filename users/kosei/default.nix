@@ -6,6 +6,7 @@
     imports = [ 
         ./gtk.nix
         ./neovim
+        ./zsh
     ];
 
     home.stateVersion = "24.11"; # Please read the comment before changing.
@@ -16,7 +17,6 @@
 
     home.packages = with pkgs; [
         # Shell
-        zsh-powerlevel10k
         starship
 
         # Utilities
@@ -27,7 +27,6 @@
         libnotify
         unzip
         zip
-        fzf
         htop
         jq
         libinput
@@ -119,6 +118,16 @@
                 sort_dir_first = true;
             };
         };
+    };
+
+    programs.fzf = {
+        enable = true;
+        enableZshIntegration = true;
+    };
+
+    programs.zoxide = {
+        enable = true;
+        enableZshIntegration = true;
     };
 
     dconf.settings = {

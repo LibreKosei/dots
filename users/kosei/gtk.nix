@@ -1,4 +1,7 @@
 {config, pkgs, ...}:
+let 
+    neuwaita = pkgs.callPackage ./packages/neuwaita.nix {};
+in
 {
     gtk = {
         enable = true;
@@ -32,6 +35,7 @@
             adwaita-icon-theme-legacy
             fluent-icon-theme
             kora-icon-theme
+            neuwaita
         ];
         pointerCursor = {
             name = "Bibata-Modern-Amber";
