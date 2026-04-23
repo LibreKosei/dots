@@ -37,9 +37,10 @@
         signal-desktop
         xournalpp
         qt6Packages.qt6ct
-        inputs.icon-browser.packages.${pkgs.system}.default
+        inputs.icon-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
         ptyxis
         rnote
+        addwater
 
         # Wallpaper utils 
         matugen
@@ -65,7 +66,7 @@
         obsidian
 
         # Rice
-        (inputs.quickshell.packages.${pkgs.system}.default.withModules [
+        (inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default.withModules [
             pkgs.kdePackages.kirigami
             pkgs.kdePackages.qtmultimedia
             pkgs.kdePackages.qt5compat
