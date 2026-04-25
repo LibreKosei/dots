@@ -7,6 +7,7 @@
         ./gtk.nix
         ./neovim
         ./zsh
+        ./tmux.nix
     ];
 
     home.stateVersion = "24.11"; # Please read the comment before changing.
