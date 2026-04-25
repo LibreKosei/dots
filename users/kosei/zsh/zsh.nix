@@ -1,4 +1,7 @@
 { config, pkgs, ...}:
+let
+    mcServerName = "minecraft-server-fabricLatest"; 
+in 
 {
     programs.zsh = {
         enable = true;
@@ -20,6 +23,8 @@
         shellAliases = {
             ".." = "cd ..";
             ls = "eza -1 --icons";
+            mcStat = "sudo systemctl status ${mcServerName}";
+            mcRestart = "sudo systemctl restart ${mcServerName}";
         };
         autocd = true;
     };
