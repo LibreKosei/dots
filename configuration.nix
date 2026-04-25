@@ -16,6 +16,8 @@
 
     nixpkgs.config.allowUnfree = true;
 
+    environment.pathsToLink = [ "/share/zsh" ];
+
     modules = {
         core = {
             fonts.enable = true;
