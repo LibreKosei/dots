@@ -11,6 +11,12 @@
                 "completion"
             ];
         };
+        zplug = {
+            enable = true;
+            plugins = [
+                { name = "zsh-users/zsh-autosuggestions"; }
+            ];
+        };
         shellAliases = {
             ".." = "cd ..";
             ls = "eza -1 --icons";

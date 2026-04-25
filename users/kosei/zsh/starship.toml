@@ -1,12 +1,12 @@
 add_newline = true
 
 format = """
-$nix_shell\
 $os\
 $directory\
 $git_branch $git_status\
 $time\
 $status\
+$nix_shell\
 $line_break\
 $character\
 """
@@ -36,7 +36,7 @@ disabled = false
 NixOS = ""
 
 [nix_shell]
-format = 'in [$symbol](fg:magenta bg:lighter_background)'
+format = '  in [$state](fg:magenta) [$symbol](fg:magenta bg:lighter_background) '
 symbol = ""
 
 [character]
