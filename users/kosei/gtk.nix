@@ -36,6 +36,12 @@ in
             fluent-icon-theme
             kora-icon-theme
             neuwaita
+            tela-icon-theme
+            tela-circle-icon-theme
+            kora-icon-theme
+            numix-icon-theme
+            numix-icon-theme-circle
+            numix-icon-theme-square
         ];
         pointerCursor = {
             name = "Bibata-Modern-Amber";
