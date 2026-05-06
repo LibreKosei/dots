@@ -29,19 +29,19 @@ in
             whitesur-icon-theme
             morewaita-icon-theme
             gnome-icon-theme
-            kdePackages.breeze-icons
-            hicolor-icon-theme
+            # kdePackages.breeze-icons
+            # hicolor-icon-theme
             adwaita-icon-theme
             adwaita-icon-theme-legacy
             fluent-icon-theme
             kora-icon-theme
-            neuwaita
-            tela-icon-theme
-            tela-circle-icon-theme
+            # neuwaita
+            # tela-icon-theme
+            # tela-circle-icon-theme
             kora-icon-theme
-            numix-icon-theme
-            numix-icon-theme-circle
-            numix-icon-theme-square
+            # numix-icon-theme
+            # numix-icon-theme-circle
+            # numix-icon-theme-square
         ];
         pointerCursor = {
             name = "Bibata-Modern-Amber";
