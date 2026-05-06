@@ -5,7 +5,7 @@
 
         TSdeps = with pkgs; [
             gcc
-            nodePackages.nodejs
+            nodejs
             vimPlugins.nvim-treesitter.withAllGrammars
         ];
 
@@ -29,7 +29,10 @@
     programs.neovim = {
         enable = true;
         withNodeJs = true;
+        withRuby = true;
+        withPython3 = true;
         extraPackages = TSdeps ++ lsp ++ packages;
+        sideloadInitLua = true;
     };
 
     xdg.configFile.nvim = {
