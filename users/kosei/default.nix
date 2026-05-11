@@ -20,6 +20,9 @@
         # Shell
         starship
 
+        # Editors
+        inputs.kvim.packages.${pkgs.stdenv.hostPlatform.system}.default
+
         # Utilities
         brightnessctl
         dart-sass
@@ -42,6 +45,7 @@
         ptyxis
         rnote
         addwater
+        bookup
 
         # Wallpaper utils 
         matugen
@@ -128,6 +132,11 @@
     };
 
     programs.zoxide = {
+        enable = true;
+        enableZshIntegration = true;
+    };
+
+    programs.lazygit = {
         enable = true;
         enableZshIntegration = true;
     };
