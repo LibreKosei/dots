@@ -25,6 +25,10 @@
         };
 
         nix-minecraft.url = "github:Infinidoge/nix-minecraft";
+
+        kvim = {
+            url = "github:LibreKosei/kvim";
+        };
     };
 
     outputs = { self, nixpkgs, home-manager, ... }@inputs: 
@@ -52,6 +56,5 @@
                     modules = [ ./users/kosei ];
                 };
             };
-
         };
 }
