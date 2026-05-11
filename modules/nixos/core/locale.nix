@@ -13,12 +13,15 @@ in
     config = lib.mkIf cfg.enable {
         i18n = {
             defaultLocale = "en_US.UTF-8";
+            extraLocales = "all";
             inputMethod = {
                 type = "fcitx5";
                 enable = true;
+                fcitx5.waylandFrontend = true;
                 fcitx5.addons = with pkgs; [
                     fcitx5-mozc
                     fcitx5-gtk
+                    fcitx5-hangul
                 ];
             };
         };
