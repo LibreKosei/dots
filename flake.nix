@@ -4,6 +4,8 @@
     inputs = {
         nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
+        nixpkgs-old.url = "github:nixos/nixpkgs/9da7f1cf7f8a6e2a7cb3001b048546c92a8258b4";
+
         home-manager = {
             url = "github:nix-community/home-manager/master";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -32,11 +34,12 @@
         };
     };
 
-    outputs = { self, nixpkgs, home-manager, ... }@inputs: 
+    outputs = { self, nixpkgs, nixpkgs-old, home-manager, ... }@inputs: 
         let
             system = "x86_64-linux";
             lib = nixpkgs.lib;
             pkgs = nixpkgs.legacyPackages.${system};
+            pkgs-old = nixpkgs-old.legacyPackages.${system};
         in
         {
             nixosConfigurations = {
@@ -53,7 +56,7 @@
             homeConfigurations = {
                 kosei = home-manager.lib.homeManagerConfiguration {
                     inherit pkgs;
-                    extraSpecialArgs = { inherit inputs; };
+                    extraSpecialArgs = { inherit inputs pkgs-old; };
                     modules = [ ./users/kosei ];
                 };
             };

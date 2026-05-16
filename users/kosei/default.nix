@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, ... }:
+{ inputs, config, pkgs, pkgs-old, ... }:
 {
     home.username = "kosei";
     home.homeDirectory = "/home/kosei";
@@ -34,16 +34,18 @@
         htop
         jq
         libinput
+        libwacom
         pavucontrol
 
         # Desktop 
         nautilus   
         signal-desktop
         xournalpp
+        saber
         qt6Packages.qt6ct
         inputs.icon-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
         ptyxis
-        rnote
+        pkgs-old.rnote
         addwater
         bookup
 
