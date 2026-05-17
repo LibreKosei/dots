@@ -85,11 +85,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1778727621,
-        "narHash": "sha256-DgKKEXI7VQTfZWQUo/z0ZlU/l1D2WJdL/FCsdEI295Q=",
+        "lastModified": 1779033643,
+        "narHash": "sha256-rTUWg5+4X6wsYnIFTeLWTnWouDnv44dyBpTnrTRii5w=",
         "owner": "LibreKosei",
         "repo": "kvim",
-        "rev": "a2cbcf0a7a79551dcf2e4eb4555bf5b7e06bb427",
+        "rev": "6def7527c1ee1efca7552ef73a56c987e893439c",
         "type": "github"
       },
       "original": {
