@@ -38,6 +38,7 @@
         pavucontrol
 
         # Desktop 
+        libreoffice
         nautilus   
         signal-desktop
         xournalpp
