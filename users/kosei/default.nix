@@ -90,6 +90,13 @@
     # various settings
     qt.enable = true;
 
+    programs.librewolf = {
+        enable = true;
+        settings = {
+            "privacy.clearOnShutdown.cookies" = true;
+        };
+    };
+
     programs.obs-studio = {
         enable = true;
         plugins = with pkgs.obs-studio-plugins; [
