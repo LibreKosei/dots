@@ -32,6 +32,8 @@
             url = "github:LibreKosei/kvim";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+
+        concord.url = "github:chojs23/concord";
     };
 
     outputs = { self, nixpkgs, nixpkgs-old, home-manager, ... }@inputs: 

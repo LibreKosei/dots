@@ -49,6 +49,8 @@
         pkgs-old.rnote
         addwater
         bookup
+        dissent
+        inputs.concord.packages.${pkgs.stdenv.hostPlatform.system}.default
 
         # Wallpaper utils 
         matugen
