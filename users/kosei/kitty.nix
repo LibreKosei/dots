@@ -12,6 +12,7 @@
             window_padding_width = 20;
             placement_strategy = "center";
             allow_remote_control = true;
+            cursor_shape = "beam";
 
             ###
             # Colors
@@ -21,8 +22,8 @@
             selection_foreground = "#DADADA";
             selection_background = "#2D3437";
 
-            cursor = "#2D3437";
-            cursor_text_color = "#DADADA";
+            cursor = "#DADADA";
+            cursor_text_color = "#232A2D";
 
             color0 = "#232A2D";
             color1 = "#E57474";
