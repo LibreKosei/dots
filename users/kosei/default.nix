@@ -37,6 +37,9 @@
         libinput
         libwacom
         pavucontrol
+        aerc
+        protonmail-bridge
+        gurk-rs
 
         # Desktop 
         libreoffice
